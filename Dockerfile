@@ -1,5 +1,5 @@
 FROM centos
 RUN yum install httpd -y
-COPY *.html /var/www/html/
+COPY *.html  /usr/local/apache2/htdocs/
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
